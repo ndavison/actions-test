@@ -8,5 +8,7 @@ jobs:
   pr-check: 
     name: Check PR
     steps:
+      - name:
+        run: echo "XXX"
       - name: check
         run: echo 'PR checked!'
