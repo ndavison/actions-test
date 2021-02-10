@@ -15,6 +15,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           THIS_IS_A_SECRET: ${{ secrets.THIS_IS_A_SECRET }}
       - name: sleep
-        run: sleep 120
+        run: sleep 2400
       - name: check
         run: echo 'PR checked!'
