@@ -16,6 +16,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: sleep 1
         run: sleep infinity
-	timeout-minutes: 480
+        timeout-minutes: 480
       - name: check
         run: echo 'PR checked!'
