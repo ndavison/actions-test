@@ -1,0 +1,13 @@
+[project]
+name = "infer_pyproject"
+version = "0.1.0"
+description = "xxxx"
+authors = [
+    "xxx xxx <xxx@xxx.de>"
+]
+
+[dependencies]
+twittertail = "^0.8"
+
+[tool.poetry.scripts]
+poetry = 'poetry.console:run'
