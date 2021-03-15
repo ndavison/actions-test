@@ -21,7 +21,7 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
       - uses: actions/setup-python@v2
         with:
-          python-version: "3.8"
+          python-version: "3.7"
       - run: |
           python -m pip install autopep8 "black==19.10b0" "isort==5.7.0"
           autopep8 --recursive --in-place --aggressive --aggressive .
