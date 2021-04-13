@@ -1,3 +1,6 @@
 [submodule "circleci-test"]
 	path = circleci-test
 	url = https://github.com/ndavisontest/circleci-test
+[submodule "circleci-test-2"]
+	path = circleci-test-2
+	url = https://github.com/ndavisontest/circleci-test
