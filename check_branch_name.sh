@@ -13,3 +13,6 @@ if [[ ! $name =~ $pattern ]]; then
 else
     echo "branch name '$name' is valid"
 fi
+
+
+
